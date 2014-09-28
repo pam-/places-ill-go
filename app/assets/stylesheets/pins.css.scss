@@ -1,0 +1,66 @@
+header{
+	width: 100%;
+	padding: 5px;
+	background: red;
+	h1{
+		padding: 0;
+		font-size: 30px;
+		small{
+			display: block;
+		}
+	}
+}
+
+.container{
+	width: 100%;
+}
+
+.container:after{
+	content:"";
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+
+.map-container{
+	width: 60%;
+	float: left;
+}
+
+#expand{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background: rgba(255, 0, 0, 0.8);
+	z-index: 2;
+	top: 250px;
+	left: 740px;
+	border-radius: 10px;
+	cursor: pointer;
+	// visibility: hidden;
+}
+
+#expand p{
+	padding: 0;
+	width: 100%;
+	position: relative;
+	margin: 12px auto;
+	font-weight: bolder;
+	color: #fff;
+	font-size: 20px;
+}
+
+.map-container:hover #expand{
+	// visibility: visible;
+}
+
+#map-canvas{
+	height: 500px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
