@@ -26,6 +26,18 @@ header{
 .map-container{
 	width: 60%;
 	float: left;
+	-webkit-transition: all 3s;
+	-ms-transition: all 3s;
+	-moz-transition: all 3s;
+	transition: all 3s;
+}
+
+.expanded{
+	width: 100%;
+		-webkit-transition: all 3s;
+	-ms-transition: all 3s;
+	-moz-transition: all 3s;
+	transition: all 3s;
 }
 
 #expand{
@@ -63,4 +75,12 @@ header{
 	padding: 0;
 }
 
+.details {
+	width: 30%;
+	float: right;
+	text-align: center;
+	.my-places{
+		width: 100%;
+	}
+}
 
