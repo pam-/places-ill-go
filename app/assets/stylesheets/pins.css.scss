@@ -1,10 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 header{
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	padding: 5px;
-	background: red;
+	background: white;
+	border-bottom: 1px solid #CDDDEE;
+	font-family: 'Droid Serif', serif;
 	h1{
 		padding: 0;
-		font-size: 30px;
+		font-size: 20px;
 		small{
 			display: block;
 		}
@@ -13,6 +18,8 @@ header{
 
 .container{
 	width: 100%;
+	margin-top: 10px;
+	padding: 20px;
 }
 
 .container:after{
@@ -43,11 +50,15 @@ header{
 	text-align: center;
 	background: rgba(255, 0, 0, 0.8);
 	z-index: 2;
-	top: 250px;
-	left: 740px;
+	top: 325px;
+	left: 710px;
 	border-radius: 10px;
 	cursor: pointer;
-	// visibility: hidden;
+	visibility: hidden;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
 }
 
 #expand p{
@@ -61,22 +72,42 @@ header{
 }
 
 .map-container:hover #expand{
-	// visibility: visible;
+	visibility: visible;
+}
+
+#expand.clicked{
+	left: 1200px;
 }
 
 #map-canvas{
+	margin: 0 auto;
 	height: 500px;
-	width: 100%;
-	margin: 0;
+	width: 90%;
 	padding: 0;
 }
 
 .details {
-	width: 30%;
+	width: 20%;
 	float: right;
 	text-align: center;
+	margin: 80px;
+	border: 1px solid #CDDDEE;
 	.my-places{
 		width: 100%;
 	}
+	ul{
+		list-style:none;
+		padding-left: 0;
+	}
+}
+
+.details.clicked{
+	clear: both;
+	width: 100%;
+	text-align: center;
+	// .my-places{
+	// 	width: 20%;
+	// 	margin: 0 auto;
+	// }
 }
 
